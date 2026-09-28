@@ -1,0 +1,8 @@
+{
+ "fetal_dist_spearman": 0.9977107632105965,
+ "tumor_dist_spearman": 0.9990648288170502,
+ "lr_control_false_positive_rate": {
+  "fetal": 0.15,
+  "tumor": 0.0
+ }
+}

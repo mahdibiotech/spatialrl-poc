@@ -1,0 +1,14 @@
+{
+ "theta_est_deg": 8.221693823975588,
+ "shift_est": [
+  1.5251051124103712,
+  -0.9297945101393998
+ ],
+ "theta_true_deg": 8.0,
+ "shift_true": [
+  1.5,
+  -1.0
+ ],
+ "TRE_registered_spots": 0.15974184230520255,
+ "TRE_unregistered_spots": 4.197902649347742
+}

@@ -1,0 +1,21 @@
+{
+ "best_method": "poisson_em_plat",
+ "n_marker_genes": 199,
+ "summary": {
+  "nnls": {
+   "mean_r": 0.9235,
+   "rmse": 0.0532,
+   "js_dist": 0.1675
+  },
+  "poisson_em": {
+   "mean_r": 0.973,
+   "rmse": 0.0491,
+   "js_dist": 0.2191
+  },
+  "poisson_em_plat": {
+   "mean_r": 0.9748,
+   "rmse": 0.0383,
+   "js_dist": 0.2004
+  }
+ }
+}

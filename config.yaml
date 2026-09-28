@@ -1,0 +1,26 @@
+seed: 42
+sim:
+  n_genes: 400
+  grid: 50            # 50 x 50 = 2500 spots par coupe
+  n_ref_per_state: 200
+  platform_sd: 0.4    # effet de plateforme scRNA -> spatial (par gène)
+  cells_per_spot: 5
+msi:
+  n_pix: 25           # grille MSI 2x plus grossière que la grille spatiale
+  theta_deg: 8.0      # désalignement réel (inconnu de l'algorithme)
+  shift_px: [1.5, -1.0]
+  noise: 0.35
+deconv:
+  n_markers_per_state: 30
+  main_method: auto   # auto = meilleure RMSE sur la simulation
+  n_iter: 200
+robustness:
+  ref_sizes: [3, 5, 10, 25, 50, 200]
+  n_rep: 5
+niche:
+  vessel_thr: 0.3
+  ring: [1.5, 4.0]
+  n_perm: 500
+  lr_radius: 3
+  n_null_pairs: 40
+outdir: results

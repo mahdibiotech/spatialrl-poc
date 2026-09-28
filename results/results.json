@@ -1,0 +1,118 @@
+{
+ "best_method": "poisson_em_plat",
+ "deconv": {
+  "nnls": {
+   "mean_r": 0.9235,
+   "rmse": 0.0532,
+   "js_dist": 0.1675
+  },
+  "poisson_em": {
+   "mean_r": 0.973,
+   "rmse": 0.0491,
+   "js_dist": 0.2191
+  },
+  "poisson_em_plat": {
+   "mean_r": 0.9748,
+   "rmse": 0.0383,
+   "js_dist": 0.2004
+  }
+ },
+ "n_marker_genes": 199,
+ "robustness_r": {
+  "nnls": {
+   "3": 0.954,
+   "5": 0.962,
+   "10": 0.974,
+   "25": 0.98,
+   "50": 0.972,
+   "200": 0.974
+  },
+  "poisson_em": {
+   "3": 0.953,
+   "5": 0.963,
+   "10": 0.978,
+   "25": 0.985,
+   "50": 0.981,
+   "200": 0.982
+  },
+  "poisson_em_plat": {
+   "3": 0.953,
+   "5": 0.964,
+   "10": 0.98,
+   "25": 0.988,
+   "50": 0.987,
+   "200": 0.989
+  }
+ },
+ "niche_fetal_RLstem": {
+  "z": 5.41,
+  "q": 0.0034930139720558
+ },
+ "niche_tumor_G3": {
+  "z": 5.91,
+  "q": 0.0053226879574184
+ },
+ "vessel_distance_spearman": 0.9977107632105965,
+ "lr_positive": {
+  "fetal:VEGFA->KDR": {
+   "z": 3.16,
+   "q": 0.036
+  },
+  "fetal:JAG1->NOTCH1": {
+   "z": 0.72,
+   "q": 0.731
+  },
+  "tumor:VEGFA->KDR": {
+   "z": -1.69,
+   "q": 0.998
+  },
+  "tumor:JAG1->NOTCH1": {
+   "z": -4.49,
+   "q": 0.998
+  }
+ },
+ "lr_control_fp_rate": {
+  "fetal": 0.15,
+  "tumor": 0.0
+ },
+ "msi": {
+  "theta_est_deg": 8.221693823975588,
+  "shift_est": [
+   1.5251051124103712,
+   -0.9297945101393998
+  ],
+  "theta_true_deg": 8.0,
+  "shift_true": [
+   1.5,
+   -1.0
+  ],
+  "TRE_registered_spots": 0.15974184230520255,
+  "TRE_unregistered_spots": 4.197902649347742
+ },
+ "msi_corr": [
+  {
+   "couple": "ion1~GC_neuron",
+   "registered": 0.741,
+   "oracle": 0.743,
+   "unregistered": 0.674
+  },
+  {
+   "couple": "ion2~Endothelial",
+   "registered": 0.583,
+   "oracle": 0.581,
+   "unregistered": 0.244
+  },
+  {
+   "couple": "ion3~RL_stem",
+   "registered": 0.616,
+   "oracle": 0.618,
+   "unregistered": 0.376
+  },
+  {
+   "couple": "ion4(bruit)~max|r|",
+   "registered": 0.112,
+   "oracle": 0.108,
+   "unregistered": 0.089
+  }
+ ]
+}
